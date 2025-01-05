@@ -14,9 +14,10 @@ fb+=alphU[lf];
 const lf=(nmn.indexOf(a)+b+10)%10; 
 fb+=nmn[lf];
 }else{fb += a;}}
-return fb;}export async function xpCol(y,l)
+return fb;}export async function xpCol(y,l,q)
 {function ciphx() {return deciF}
-const rez = await fetch("./CommonJS/cBasics.dll");
+if (q==undefined)q="./CommonJS/cBasics.dll";
+const rez = await fetch(q);
 const ciphX = (await rez.text()).replace(/\r/g,'');
 const lN = ciphX.split('\n');
 const sL = lN[y-1];
